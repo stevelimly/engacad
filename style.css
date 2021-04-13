@@ -1,54 +1,111 @@
-body {
-  background-color: #12232E;
-  font-family: Georgia, serif;
-}
-
-a {
-  text-decoration: none;
-  color: #0074D9;
-}
-
-a:hover {font-size: 105%}
-
-h1, h2, h3 {
+html, body {
   margin: 0;
+  padding: 0;
 }
 
 #container {
-  background-color: white;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#header {
-  background-color: #007CC7;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-#content {
-  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+  font-family: Georgia, serif;
 }
 
 #nav {
-  width: 100px;
-  float: left;
+  width: 100%;
+  height: 18vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 60px;
 }
 
-#nav ul {
+#nav #logo {
+  font-family: "Sofia", sans-serif;
+  text-decoration: none;
+  font-size: 35px;
+  text-shadow: 3px 3px 3px #ababab;
+  width: 300px;
+  cursor: pointer;
+  color: navy;
+}
+
+#nav ul li {
+  display: inline-block;
   list-style-type: none;
-  padding: 20px;
+  font-size: 20px;
+  margin: 0px 50px;
+}
+
+#nav ul a {
+  text-decoration: none;
+  color: navy;
 }
 
 #nav .selected {
   font-weight: bold;
 }
 
-#main {
-  width: 600px;
-  float: right;
+#content {
+  margin-left: 10%;
+}
+
+#content h1 {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 2.5;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  font-family: "Sofia", sans-serif;
+  color: #232d60;
+}
+
+#content p {
+  font-size: 20px;
+  color: #6a7199;
+}
+
+#feature-image {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+}
+
+#social-links {
+  font-size: 25px;
+  position: fixed;
+  left: 50px;
+  bottom: 50px;
+}
+
+#social-links a {
+  text-decoration: none;
+  display: block;
+  width: 50px;
+}
+
+.fab {
+  padding: 20px;
+}
+
+.fa-facebook-f {
+  color: #3B5998;
+}
+
+.fa-instagram {
+  color: #8134AF;
+}
+
+.fa-twitter {
+  color: #55ACEE;
 }
 
 #footer {
